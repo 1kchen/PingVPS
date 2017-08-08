@@ -1,4 +1,10 @@
-TESTTIME=1000
+
+if $# == 0
+	then
+	TESTTIME = 10
+else
+	TESTTIME = $1
+fi
 mkdir linode
 mkdir vultr
 mkdir aws
